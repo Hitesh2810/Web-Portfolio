@@ -277,7 +277,15 @@ section {
     width: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: var(--transition);
+}
+
+.project-img-contain {
+    height: 260px;
+    background-color: #05050a;
+    background-size: contain;
+    background-position: center;
 }
 
 .project-card:hover .project-img {

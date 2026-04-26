@@ -43,14 +43,16 @@ if (document.getElementById('typed')) {
 
 // Project Data
 const projects = [
-    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "Images/qrcryptx.png", github: "https://github.com/Hitesh2810/QRCryptX" },
-    { title: "Voice-Vista", desc: "Multilingual voice-controlled intuitive web application.", tech: ["Node.js", "WebSpeech API"], img: "https://images.unsplash.com/photo-1589254065675-d2d144f84929?auto=format&fit=crop&q=80&w=400" },
-    { title: "SaaS-Notes-App", desc: "High-performance cloud-based note taking application.", tech: ["React", "Firebase"], img: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/SaaS-Notes-App" },
-    { title: "LeadHub", desc: "Enterprise-grade lead management and CRM system.", tech: ["JavaScript", "Express"], img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/LeadHub" },
-    { title: "RnD_AI_CurveFit", desc: "Parametric curve fitting using custom ML algorithms.", tech: ["Python", "NumPy", "Scikit"], img: "https://images.unsplash.com/photo-1509228468518-180dd48a5411?auto=format&fit=crop&q=80&w=400" },
-    { title: "Capex-Tracker", desc: "Financial tracking for capital expenditures.", tech: ["React", "Charts.js"], img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/capex-tracker" },
-    { title: "Code-Tree", desc: "Visualizing complex Data Structures and Algorithms.", tech: ["Canvas API", "Algorithms"], img: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=400" },
-    { title: "WebSleuth", desc: "Web security and vulnerability assessment tool.", tech: ["Security", "Python"], img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/WebSleuth-Hitesh" }
+    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "Images/qrcryptx.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/QRCryptX" },
+    { title: "Voice-Vista", desc: "Multilingual voice-controlled intuitive web application.", tech: ["Node.js", "WebSpeech API"], img: "Images/VV.png", imageClass: "project-img-contain" },
+    { title: "SaaS-Notes-App", desc: "High-performance cloud-based note taking application.", tech: ["React", "Firebase"], img: "Images/ss.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/SaaS-Notes-App" },
+    { title: "LeadHub", desc: "Enterprise-grade lead management and CRM system.", tech: ["JavaScript", "Express"], img: "Images/lh.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/LeadHub" },
+    { title: "RnD_AI_CurveFit", desc: "Parametric curve fitting using custom ML algorithms.", tech: ["Python", "NumPy", "Scikit"], img: "Images/rnd.png", imageClass: "project-img-contain" },
+    { title: "Capex-Tracker", desc: "Financial tracking for capital expenditures.", tech: ["React", "Charts.js"], img: "Images/ct.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/capex-tracker" },
+    { title: "Code-Tree", desc: "Visualizing complex Data Structures and Algorithms.", tech: ["Canvas API", "Algorithms"], img: "Images/ctr.png", imageClass: "project-img-contain" },
+    { title: "WebSleuth", desc: "Web security and vulnerability assessment tool.", tech: ["Security", "Python"], img: "Images/wb.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/WebSleuth-Hitesh" },
+    { title: "Impact of COVID-19 on Mental Health", desc: "Machine learning analysis of COVID-19's impact on mental health patterns.", tech: ["Python", "Machine Learning"], img: "Images/ml.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/Machine-Learning" },
+    { title: "Galaxy Classification Using Deep Learning", desc: "Deep learning model for classifying galaxy images and astronomical patterns.", tech: ["Deep Learning", "Python"], img: "Images/gc.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/Neural-Networks-And-Deep-Learning" }
 ];
 
 const projectGrid = document.getElementById('projects-grid');
@@ -60,7 +62,7 @@ if (projectGrid) {
     projectsToShow.forEach(p => {
         projectGrid.innerHTML += `
         <div class="project-card reveal" data-tilt>
-            <div class="project-img" style="background-image: url('${p.img}')"></div>
+            <div class="project-img ${p.imageClass || ''}" style="background-image: url('${p.img}')"></div>
             <div class="project-content">
                 <div class="project-tags">
                     ${p.tech.map(t => `<span class="tag">${t}</span>`).join('')}
