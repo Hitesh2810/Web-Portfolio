@@ -320,6 +320,27 @@ section {
     font-weight: 600;
 }
 
+.cert-card {
+    position: relative;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.cert-link-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--text);
+    opacity: 0.75;
+    transition: var(--transition);
+}
+
+.cert-link-icon:hover {
+    color: var(--primary);
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
 /* --- Blogs & Certs --- */
 .grid-container {
     display: grid;

@@ -43,7 +43,7 @@ if (document.getElementById('typed')) {
 
 // Project Data
 const projects = [
-    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/QRCryptX" },
+    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "Images/qrcryptx.png", github: "https://github.com/Hitesh2810/QRCryptX" },
     { title: "Voice-Vista", desc: "Multilingual voice-controlled intuitive web application.", tech: ["Node.js", "WebSpeech API"], img: "https://images.unsplash.com/photo-1589254065675-d2d144f84929?auto=format&fit=crop&q=80&w=400" },
     { title: "SaaS-Notes-App", desc: "High-performance cloud-based note taking application.", tech: ["React", "Firebase"], img: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/SaaS-Notes-App" },
     { title: "LeadHub", desc: "Enterprise-grade lead management and CRM system.", tech: ["JavaScript", "Express"], img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400", github: "https://github.com/Hitesh2810/LeadHub" },
@@ -79,25 +79,28 @@ if (projectGrid) {
 
 // Certifications
 const certs = [
-    { title: "Deep Learning Specialization", issuer: "Coursera / DeepLearning.AI" },
-    { title: "Machine Learning Professional", issuer: "Google Cloud" },
-    { title: "Advanced React & Redux", issuer: "Udemy" },
-    { title: "Full Stack Web Development", issuer: "FreeCodeCamp" },
-    { title: "Python for Data Science", issuer: "IBM" },
-    { title: "AWS Solutions Architect", issuer: "Amazon Web Services" }
+    { title: "APCIT 2025 - Research Paper Presentation", desc: "Presented deep learning work on galaxy classification.", link: "https://drive.google.com/file/d/1uIHpCPL50AYpm8PzMpBRrMfJ6XIvXf4k/view?usp=drive_link" },
+    { title: "APCIT 2025 - Secure QR System Research", desc: "Presented research on encrypted QR-based file transfer.", link: "https://drive.google.com/file/d/1zdcPu0fUOzohbX1tU9RgC9p78_TjUCFj/view?usp=drive_link" },
+    { title: "Best Paper Presenter - SSITCON 2025", desc: "Awarded best paper for blockchain-based file sharing system.", link: "https://drive.google.com/file/d/1nTJNhU6Os-oHHl2AMS8G3R2ynPZjTIxe/view?usp=drive_link" },
+    { title: "ICISS 2025 - IEEE Conference Presentation", desc: "Presented research on AI in digital mental health.", link: "https://drive.google.com/file/d/1SpMVvhLhoyIKNMLXXKuz2Q86WDBcX9Mm/view?usp=drive_link" },
+    { title: "Web Development Internship - Raise Digital", desc: "Completed internship with real-world web development experience.", link: "https://drive.google.com/file/d/15PTdVWCgjcDqPoGc2q_1KtO1Q9FZuJtL/view?usp=drive_link" },
+    { title: "Web Development Training - 1Stop", desc: "Successfully completed certified web development program.", link: "https://drive.google.com/file/d/1WYVckqdddvN8j8-bG60reu6pGFjzXBg7/view?usp=drive_link" }
 ];
 
 const certGrid = document.getElementById('certs-grid');
 if (certGrid) {
-certs.forEach(c => {
-    certGrid.innerHTML += `
-        <div class="skill-card reveal" data-tilt style="text-align: left; padding: 1.5rem">
+    certs.forEach(c => {
+        certGrid.innerHTML += `
+        <div class="skill-card cert-card reveal" data-tilt>
+            <a href="${c.link}" class="cert-link-icon" target="_blank" rel="noopener noreferrer" aria-label="View ${c.title}">
+                <i data-lucide="external-link" size="18"></i>
+            </a>
             <i data-lucide="award" style="color: var(--accent)"></i>
             <h4 style="margin-top: 1rem">${c.title}</h4>
-            <p style="font-size: 0.8rem; opacity: 0.7">${c.issuer} • 2024</p>
+            <p style="font-size: 0.85rem; opacity: 0.75; margin-top: 0.5rem">${c.desc}</p>
         </div>
     `;
-});
+    });
 }
 
 // Blog Dummy Data
