@@ -6,7 +6,7 @@ const themeBtn = document.getElementById('theme-btn');
 const themeIcon = document.getElementById('theme-icon');
 const body = document.body;
 
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = 'light';
 body.setAttribute('data-theme', savedTheme);
 updateIcon(savedTheme);
 
