@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh Kumar | Full Stack Developer & AI Enthusiast</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Scripts for Icons and Animations -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Animated Background -->
+    <div id="bg-canvas">
+        <div class="bg-blob" style="top: 10%; left: 10%; background: var(--primary);"></div>
+        <div class="bg-blob" style="top: 60%; left: 80%; background: var(--secondary); animation-delay: -5s;"></div>
+        <div class="bg-blob" style="top: 40%; left: 30%; background: var(--accent); animation-delay: -10s;"></div>
+    </div>
+
+    <nav>
+        <div class="logo">HK.DEV</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#certs">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-btn">
+            <i data-lucide="moon" id="theme-icon"></i>
+        </button>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1 class="reveal">Hi, I'm <span style="color: var(--primary)">Hitesh Kumar</span></h1>
+        <div class="typed-text"><span id="typed"></span></div>
+        <div class="hero-btns reveal">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2 class="section-title reveal">Technical Excellence</h2>
+        <div class="skills-grid">
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="code-2"></i>
+                <h3>Python</h3>
+                <p>AI/ML & Backend</p>
+            </div>
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="coffee"></i>
+                <h3>Java</h3>
+                <p>System Dev</p>
+            </div>
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="layout"></i>
+                <h3>Frontend</h3>
+                <p>React/HTML/CSS</p>
+            </div>
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="server"></i>
+                <h3>Node.js</h3>
+                <p>Fast APIs</p>
+            </div>
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="database"></i>
+                <h3>MongoDB</h3>
+                <p>NoSQL Data</p>
+            </div>
+            <div class="skill-card reveal" data-tilt>
+                <i data-lucide="git-branch"></i>
+                <h3>Git</h3>
+                <p>Version Control</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="projects-container" id="projects-grid">
+            <!-- Projects will be injected here via JS -->
+        </div>
+        <div class="section-action reveal">
+            <a href="projects.html" class="btn btn-primary">Show More Projects</a>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2 class="section-title reveal">Latest Insights</h2>
+        <div class="grid-container" id="blog-grid">
+            <!-- Blogs -->
+        </div>
+    </section>
+
+    <section id="certs">
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="grid-container" id="certs-grid">
+            <!-- Certs -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-wrapper reveal">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
+            </form>
+            <div style="margin-top: 2rem; text-align: center; display: flex; justify-content: center; gap: 2rem;">
+                <a href="#" style="color: var(--text)"><i data-lucide="github"></i></a>
+                <a href="#" style="color: var(--text)"><i data-lucide="linkedin"></i></a>
+                <a href="#" style="color: var(--text)"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
