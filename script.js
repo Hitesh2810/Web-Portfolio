@@ -43,7 +43,7 @@ if (document.getElementById('typed')) {
 
 // Project Data
 const projects = [
-    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "https://i.postimg.cc/Kjdn0wBw/qrcryptx.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/QRCryptX" },
+    { title: "QRCryptX", desc: "QR-based encryption and advanced data security system.", tech: ["Python", "Cryptography"], img: "https://i.postimg.cc/0yXqVKng/q.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/QRCryptX" },
     { title: "Voice-Vista", desc: "Multilingual voice-controlled intuitive web application.", tech: ["Node.js", "WebSpeech API"], img: "https://i.postimg.cc/ZKfrsfzD/vv.png", imageClass: "project-img-contain" },
     { title: "SaaS-Notes-App", desc: "High-performance cloud-based note taking application.", tech: ["React", "Firebase"], img: "https://i.postimg.cc/mDm8BTFM/ss.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/SaaS-Notes-App" },
     { title: "LeadHub", desc: "Enterprise-grade lead management and CRM system.", tech: ["JavaScript", "Express"], img: "https://i.postimg.cc/2jbrMyWx/lh.png", imageClass: "project-img-contain", github: "https://github.com/Hitesh2810/LeadHub" },
