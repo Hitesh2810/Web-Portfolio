@@ -82,11 +82,11 @@ if (projectGrid) {
 // Certifications
 const certs = [
     { title: "APCIT 2025 - Research Paper Presentation", desc: "Presented deep learning work on galaxy classification.", link: "https://drive.google.com/file/d/1uIHpCPL50AYpm8PzMpBRrMfJ6XIvXf4k/view?usp=drive_link" },
-    { title: "APCIT 2025 - Secure QR System Research", desc: "Presented research on encrypted QR-based file transfer.", link: "https://drive.google.com/file/d/1zdcPu0fUOzohbX1tU9RgC9p78_TjUCFj/view?usp=drive_link" },
     { title: "Best Paper Presenter - SSITCON 2025", desc: "Awarded best paper for blockchain-based file sharing system.", link: "https://drive.google.com/file/d/1nTJNhU6Os-oHHl2AMS8G3R2ynPZjTIxe/view?usp=drive_link" },
     { title: "ICISS 2025 - IEEE Conference Presentation", desc: "Presented research on AI in digital mental health.", link: "https://drive.google.com/file/d/1SpMVvhLhoyIKNMLXXKuz2Q86WDBcX9Mm/view?usp=drive_link" },
     { title: "Web Development Internship - Raise Digital", desc: "Completed internship with real-world web development experience.", link: "https://drive.google.com/file/d/15PTdVWCgjcDqPoGc2q_1KtO1Q9FZuJtL/view?usp=drive_link" },
-    { title: "Web Development Training - 1Stop", desc: "Successfully completed certified web development program.", link: "https://drive.google.com/file/d/1WYVckqdddvN8j8-bG60reu6pGFjzXBg7/view?usp=drive_link" }
+    { title: "Web Development Training - 1Stop", desc: "Successfully completed certified web development program.", link: "https://drive.google.com/file/d/1WYVckqdddvN8j8-bG60reu6pGFjzXBg7/view?usp=drive_link" },
+    { title: "APCIT 2025 - Secure QR System Research", desc: "Presented research on encrypted QR-based file transfer.", link: "https://drive.google.com/file/d/1zdcPu0fUOzohbX1tU9RgC9p78_TjUCFj/view?usp=drive_link" }
 ];
 
 const certGrid = document.getElementById('certs-grid');
